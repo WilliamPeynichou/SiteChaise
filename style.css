@@ -1,0 +1,84 @@
+/* CSS GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(13, 126, 192);
+    font-family: 'Courier New', Courier, monospace
+}
+
+a{
+    color: rgb(13, 126, 192);
+    text-decoration: none;
+}
+
+.relativ{
+    position: relative;
+}
+
+.absolut{
+    position: absolute;
+}
+/* CSS Class */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border: 2px rgb(13, 126, 192) solid;
+    background-color: rgb(255, 255, 255);
+}
+
+.ulLink{
+    display: flex;
+    justify-content: space-around;
+    gap: 4em;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 3em;
+    position: absolute;
+    top: 1050%;
+    left: 30%
+}
+
+/* CSS Bandeau deroulant */
+
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+}
+
+.marquee-text {
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollOnce 10s linear infinite;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 8em;
+}
+
+@keyframes scrollOnce {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.chair{
+    position: absolute;
+    left: 40%;
+    top: 200%;
+}
+
+/* CSS Menu deroulant */
+
+
+/* CSS Responsiv */
