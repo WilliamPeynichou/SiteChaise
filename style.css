@@ -78,7 +78,27 @@ a{
     top: 200%;
 }
 
+
 /* CSS Menu deroulant */
 
+.imgOverlayWrap{
+  display: flex;
+  align-items: center;
+  margin: 100px 200px auto;
+}
+
+/* CSS Premiere case du menu deroulant */
+
+.first{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content:space-around;
+
+}
+
+.firstP{
+  text-align: center;
+  padding: 30px;
+}
 
 /* CSS Responsiv */
