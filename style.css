@@ -18,39 +18,50 @@ a{
 .absolut{
     position: absolute;
 }
+
+header{
+  position: sticky;
+  width: 100%;
+  height: 100px;
+}
+
+main{
+  position: sticky;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 /* CSS Class */
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    border: 2px rgb(13, 126, 192) solid;
-    background-color: rgb(255, 255, 255);
+.fixedHeader{
+  position: fixed;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .ulLink{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 4em;
     list-style-type: none;
     flex-wrap: wrap;
-}
-
-.title{
-    font-size: 3em;
-    position: absolute;
-    top: 1050%;
-    left: 30%
+    border: 2px rgb(13, 126, 192) solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
 }
 
 /* CSS Bandeau deroulant */
 
 .marquee-container {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
-  height: 40px;
+  height: 40px;;
 }
 
 .marquee-text {
@@ -77,17 +88,49 @@ a{
     left: 40%;
     top: 200%;
 }
+ /* CSS Background figé */
 
+.figedBackground{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title{
+  font-size: 4em;
+}
 
 /* CSS Menu deroulant */
 
 .imgOverlayWrap{
   display: flex;
+  transform: translateZ(0);
+  position: relative;
   align-items: center;
   margin: 100px 200px auto;
+  flex-direction: column;
+  gap: 20em;
 }
 
 /* CSS Premiere case du menu deroulant */
+
+.opacity0{
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 0, 0, 0);
+
+}
 
 .first{
   background-color: rgb(255, 255, 255);
@@ -101,4 +144,16 @@ a{
   padding: 30px;
 }
 
+/* CSS Deuxieme case du menu deroulant */
+
+.second{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content:space-around;
+}
+
+.secondP{
+  text-align: center;
+  padding: 30px;
+}
 /* CSS Responsiv */
