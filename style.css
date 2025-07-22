@@ -190,4 +190,23 @@ main{
   padding: 5px;
 }
 
+/* CSS Cinquieme case */
+
+.quint{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.quintP{
+  text-align: center;
+  padding: 10px;
+}
+
+.quintImg{
+  align-items: center;
+  width: 100%;
+}
 /* CSS Responsiv */
