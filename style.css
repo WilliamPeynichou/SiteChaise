@@ -31,6 +31,7 @@ main{
   background-repeat: no-repeat;
   background-size: cover;
   }
+
 /* CSS Class */
 
 .fixedHeader{
@@ -86,25 +87,26 @@ main{
 .chair{
     position: absolute;
     left: 40%;
-    top: 200%;
+    top: 100%;
 }
  /* CSS Background figé */
 
 .figedBackground{
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 2em;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 50%;
+  height: 30%;
 }
 
 .img{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 5px 20px;
 }
 
 .title{
@@ -144,6 +146,11 @@ main{
   padding: 30px;
 }
 
+.firstImg{
+  display: flex;
+  align-items: center;
+}
+
 /* CSS Deuxieme case du menu deroulant */
 
 .second{
@@ -156,4 +163,31 @@ main{
   text-align: center;
   padding: 30px;
 }
+
+/* CSS Troisieme case */
+
+.third{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transform: rotate(20deg);
+}
+
+/* CSS Quatrieme case */
+.quad{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content:space-around;
+}
+
+.quadP{
+  text-align: center;
+  padding: 10px;
+}
+
+.imgQuad{
+  padding: 5px;
+}
+
 /* CSS Responsiv */
