@@ -1,4 +1,7 @@
 /* CSS GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +26,7 @@ header{
   position: sticky;
   width: 100%;
   height: 100px;
+  z-index: 10;
 }
 
 main{
@@ -33,6 +37,8 @@ main{
   }
 
 /* CSS Class */
+
+
 
 .fixedHeader{
   position: fixed;
@@ -56,7 +62,7 @@ main{
 
 /* CSS Bandeau deroulant */
 
-.marquee-container {
+.menuContainer {
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -65,10 +71,10 @@ main{
   height: 40px;;
 }
 
-.marquee-text {
+.menuText {
   position: absolute;
   white-space: nowrap;
-  animation: scrollOnce 10s linear infinite;
+  animation: scrollOnce 15s linear infinite;
   padding: 10px;
   display: flex;
   justify-content: space-around;
@@ -77,10 +83,10 @@ main{
 
 @keyframes scrollOnce {
   0% {
-    left: 100%;
+    left: 150%;
   }
   100% {
-    left: -100%;
+    left: -170%;
   }
 }
 
@@ -117,10 +123,11 @@ main{
 
 .imgOverlayWrap{
   display: flex;
+  justify-content: center;
   transform: translateZ(0);
   position: relative;
   align-items: center;
-  margin: 100px 200px auto;
+  margin: 50px 200px auto;
   flex-direction: column;
   gap: 20em;
 }
@@ -138,6 +145,7 @@ main{
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content:space-around;
+  margin-top: 500px;
 
 }
 
@@ -171,7 +179,12 @@ main{
   align-items: center;
   justify-content: center;
   width: 100%;
-  transform: rotate(20deg);
+  transform: rotate(5deg);
+}
+
+.imgThird{
+  display: flex;
+  align-items: center;
 }
 
 /* CSS Quatrieme case */
@@ -188,6 +201,9 @@ main{
 
 .imgQuad{
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CSS Cinquieme case */
@@ -208,5 +224,176 @@ main{
 .quintImg{
   align-items: center;
   width: 100%;
+  background-color: rgba(240, 248, 255, 0);
 }
 /* CSS Responsiv */
+
+/* CSS Footer */
+
+/* CSS Formulaire  */
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff00;
+  padding: 60px;
+  transform: translateZ(0);
+  position: relative;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.left a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.handshake {
+  max-width: 120px;
+  margin-bottom: 30px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  padding: 10px;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+.checkboxes label {
+  font-size: 0.85rem;
+  flex: 1 1 40%;
+}
+
+button {
+  align-self: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* RESPONSIVE: Tablets & below */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .left, .right {
+    padding: 10px;
+  }
+
+  .left h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .left p {
+    text-align: center;
+  }
+
+  .handshake {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* RESPONSIVE Form*/
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 1.4rem;
+  }
+
+  .checkboxes {
+    flex-direction: column;
+  }
+
+  .checkboxes label {
+    flex: 1 1 100%;
+  }
+
+  form label {
+    font-size: 0.85rem;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+  }
+}

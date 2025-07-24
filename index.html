@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chaise Ecole</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="asset/js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,12 +26,14 @@
             </li>
           </ul>
         </nav>
-        <div class="marquee-container">
-          <div class="marquee-text">
+        <div class="menuContainer">
+          <div class="menuText">
             <span>100% recyclable</span>
-            <span>Créer pour votre dos</span>
-            <span>Créer pour qu'elle sois inoubliable</span>
+            <span>Créée pour votre dos</span>
+            <span>Créée pour qu'elle soit inoubliable</span>
             <span> Depuis 1954</span>
+            <span>Je suis la chaise sur laquelle elle s'asseoit</span>
+            <span>sponso par Gims</span>
           </div>
         </div>
       </div>
@@ -46,7 +49,7 @@
       </section>
       <section class="paralax">
         <div class="imgOverlayWrap">
-          <div class="opacity0"></div>
+          <!-- <div class="opacity0"></div> -->
           <div class="first">
             <p class="firstP">
               Concevoir une chaise dans l'esprit du Bauhaus, c'est embrasser une
@@ -78,7 +81,7 @@
               <img
                 src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJ6c3Q1eGFjM3d2ZWx4cTZhNXRjdjFmaHk1bzF6MzZwaGl0MTQ1aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPqsXYcdjcBcXL2/giphy.gif"
                 alt=" gif d'outils"
-                width="300px"
+                width="200px"
               />
             </div>
             <p class="secondP">
@@ -94,12 +97,12 @@
             </p>
           </div>
           <div class="third">
+            <a href="#containerId" class="imgThird third">
             <img
               src="asset/BilletAvion.png"
               alt="billet d'avion"
-              width="80%"
-              class="imgThird"
-            />
+              width="60%" class="imgThird third"/>
+              </a>
           </div>
           <div class="quad">
             <p class="quadP">
@@ -119,10 +122,9 @@
             </p>
             <div class="imgQuad">
               <img
-                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZ0Z3RrdzJoMGp3YTU2OGxxMm52NWQ4MnZhOWt5dTE3aHNqdzR5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dJX6ig7de21xe/giphy.gif"
+                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDg1OGxlYTZpOTl5cHV4cHFreW5iM284NXIyZ3A0dWUxbndybWt0bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kbcMtsnauTJKpdflC2/giphy.gif"
                 alt=" gif reflexion"
-                class=""
-              />
+                class="" width="200px"/> 
             </div>
           </div>
           <div class="quint">
@@ -151,9 +153,24 @@
               <img src="asset/Bonhomme.png" alt="dessin bonhomme" width="150px"/>
             </div>
           </div>
+          <div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+    <div class="container" id="containerId">
+    <div class="right">
+      <form>
+        <label>Prenom - Nom<input type="text" placeholder="Sylvie Brulebois" id="name" required></label>
+        <label>Entreprise<input type="text" placeholder="Nom de l'entreprise" required></label>
+        <label>Telephone<input type="tel" placeholder="+336 12 23 45 67" id="phone"></label>
+        <label>Email<input type="email" placeholder="primo@iso.com" id="email" required></label>
+        <label>Votre demande<textarea placeholder="Decrivez nous votre projet" required></textarea></label>
+        <button type="submit" id="sendBtn">Envoyé</button>
+      </form>
+    </div>
+  </div>
+    </footer>
   </body>
 </html>
