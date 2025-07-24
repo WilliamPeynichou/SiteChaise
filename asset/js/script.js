@@ -1,17 +1,17 @@
 window.onload = function () {
-  var sendButton = document.getElementById("sendBtn");
+  const sendButton = document.getElementById("sendBtn");
 
   if (sendButton) {
     sendButton.addEventListener("click", function (event) {
       event.preventDefault(); // Empêche l'envoi du formulaire
 
       // Récupération des champs
-      var name = document.getElementById("name").value.trim();
-      var email = document.getElementById("email").value.trim();
-      var phone = document.getElementById("phone").value.trim();
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let phone = document.getElementById("phone").value.trim();
 
       // Détecter les champs vides
-      var champsManquants = "";
+      let champsManquants = "";
 
       if (name === "") {
         champsManquants += "Nom ,";
